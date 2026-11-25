@@ -21,6 +21,7 @@ jobs:
           python fruits/002-A384700/check.py
           python fruits/003-A263160/check.py
           python fruits/004-A338020/check.py
+          python fruits/005-A397045/check.py
   lean-draft-build:
     runs-on: ubuntu-latest
     steps:
