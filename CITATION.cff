@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use these research notes, please cite this repository and the relevant original problem sources. Cite the specific archived version when available."
+title: "Casually picking low-hanging fruit in mathematics with AI."
+type: software
+authors:
+  - family-names: "WhatRUHuh"
+    alias: "WhatRUHuh"
+repository-code: "https://github.com/WhatRUHuh/Casually-picking-low-hanging-fruit-in-mathematics-with-AI."
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24541379"
+    description: "DOI displayed by the Zenodo repository integration."
+license: MIT
+abstract: "An open collection of AI-generated candidate mathematical proofs, reproducible checks, formalization drafts, and research provenance. Human initiator and maintainer: WhatRUHuh. Initial proof generation and drafting: GPT-6.2 (ChatGPT). Independent review, full formal verification, and priority confirmation are pending."
+keywords:
+  - mathematics
+  - AI-assisted research
+  - integer sequences
+  - formal verification
