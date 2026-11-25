@@ -22,3 +22,7 @@ For Fruit 005, the [OEIS A397045](https://oeis.org/A397045) entry was directly r
 ## Verification milestone: v0.1.1
 
 On November 26, 2026 (UTC+08:00), [Research checks #8](https://github.com/WhatRUHuh/Casually-picking-low-hanging-fruit-in-mathematics-with-AI./actions/runs/45683916081) succeeded for commit `7db3df027a9306b319f951985ebe90c5ae45b988`. Both numerical-checks and lean-draft-build passed. The previous Lean failure was due to missing `lake-manifest.json`; CI now runs `lake update`, obtains the Mathlib cache, and builds the project. The log explicitly reports successful builds of Fruit001, Fruit002, Fruit004 and MathFruit. Fruit004.triangle_iff proves the generalized inequality over integer indices and real alpha > 3; its identification with the original OEIS geometric count and the degenerate-triangle claim remain outside the formal proof. Fruit001 and Fruit002 contain supporting lemmas, not complete proofs; Fruits 003 and 005 remain unformalized. No independent review or priority claim is made. The v0.1.0 archive is preserved.
+
+## Commit attribution
+
+AI-assisted repository contributions are credited using Git co-author trailers where appropriate. GPT-6.2 (ChatGPT) generated the initial mathematical arguments and assisted with repository documentation and code. This attribution does not indicate participation, endorsement, or independent mathematical review by OpenAI as an organization.
