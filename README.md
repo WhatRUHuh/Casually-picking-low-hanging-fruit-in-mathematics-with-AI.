@@ -8,14 +8,18 @@ An informal, open research notebook maintained by WhatRUHuh. The initial five ma
 
 **All five initial research turns displayed less than one minute of thinking time in ChatGPT (55 s, 35 s, 53 s, 25 s, and 55 s).** These are interface-reported durations, not independently measured end-to-end proof-generation or verification times. Fruit 002 also involved a subsequent change of target after a prior proof was found.
 
+[![Research checks](https://github.com/WhatRUHuh/Casually-picking-low-hanging-fruit-in-mathematics-with-AI./actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/WhatRUHuh/Casually-picking-low-hanging-fruit-in-mathematics-with-AI./actions/workflows/checks.yml)
+
+**Verification milestone (v0.1.1):** All five Python checks and the Lean build passed in [CI run #8](https://github.com/WhatRUHuh/Casually-picking-low-hanging-fruit-in-mathematics-with-AI./actions/runs/45683916081). Fruit 004's generalized floor-difference inequality is formally proved; Fruits 001 and 002 have compiled supporting lemmas. The original OEIS statements are not yet fully formalized.
+
 ## The orchard
 
 | Fruit | Problem | Result | Status | Displayed thinking time |
 | --- | --- | --- | --- | --- |
-| 001 | [OEIS A000181](https://oeis.org/A000181) | [Congruences for ménage hit polynomials](fruits/001-A000181/README.md) | Candidate proof | 55 s |
-| 002 | [OEIS A384700](https://oeis.org/A384700) | [Counting circles on a two-row grid](fruits/002-A384700/README.md) | Candidate proof | 35 s |
-| 003 | [OEIS A263160](https://oeis.org/A263160) | [A first-zero lattice-path asymptotic](fruits/003-A263160/README.md) | Candidate proof | 53 s |
-| 004 | [OEIS A338020](https://oeis.org/A338020) | [Triangle inequalities for floor differences](fruits/004-A338020/README.md) | Candidate proof | 25 s |
+| 001 | [OEIS A000181](https://oeis.org/A000181) | [Congruences for ménage hit polynomials](fruits/001-A000181/README.md) | Candidate proof; Lean supporting lemma compiled | 55 s |
+| 002 | [OEIS A384700](https://oeis.org/A384700) | [Counting circles on a two-row grid](fruits/002-A384700/README.md) | Candidate proof; Lean supporting lemmas compiled | 35 s |
+| 003 | [OEIS A263160](https://oeis.org/A263160) | [A first-zero lattice-path asymptotic](fruits/003-A263160/README.md) | Candidate proof; not Lean-formalized | 53 s |
+| 004 | [OEIS A338020](https://oeis.org/A338020) | [Triangle inequalities for floor differences](fruits/004-A338020/README.md) | Generalized inequality Lean-verified; OEIS bridge pending | 25 s |
 | 005 | [OEIS A397045](https://oeis.org/A397045) | [Asymptotic growth of sums of square roots](fruits/005-A397045/README.md) | Candidate proof | 55 s |
 
 ## Verification
@@ -23,7 +27,7 @@ An informal, open research notebook maintained by WhatRUHuh. The initial five ma
 - The notes are AI-generated mathematical arguments, not peer-reviewed papers.
 - Priority is unconfirmed. The OEIS source entries and available indexed material were checked, but a comprehensive literature search has not been completed.
 - Python scripts provide reproducible checks, not proofs of universal claims.
-- The [Lean directory](lean/) contains initial formalization targets and partial lemmas. No full result has yet been verified by Lean; the initial Lean sources have not been compiled.
+- The [Lean directory](lean/) contains compiled supporting lemmas and the complete generalized inequality theorem `Fruit004.triangle_iff`. CI run #8 built `Fruit001`, `Fruit002`, `Fruit004`, and `MathFruit` successfully with Lean 4 / Mathlib v4.19.0. No original OEIS counting statement is claimed to be fully formalized.
 - Corrections, independent proofs, formalizations and references to prior work are welcome through Issues and PRs.
 
 Run the computational checks with Python 3 (standard library only):
@@ -42,7 +46,7 @@ Initial exploration: November 26, 2026 (UTC+08:00). Human initiator and reposito
 
 ## Citation
 
-The first harvest was published as [v0.1.0](https://github.com/WhatRUHuh/Casually-picking-low-hanging-fruit-in-mathematics-with-AI./releases/tag/v0.1.0). The repository's Zenodo integration displays DOI [10.5281/zenodo.24541379](https://doi.org/10.5281/zenodo.24541379). See [CITATION.cff](CITATION.cff) for citation metadata. Use the specific version DOI listed on Zenodo when citing a fixed release. A DOI is an archival identifier, not evidence of peer review or mathematical correctness.
+The initial snapshot was published as [v0.1.0](https://github.com/WhatRUHuh/Casually-picking-low-hanging-fruit-in-mathematics-with-AI./releases/tag/v0.1.0). The initial Zenodo integration displayed DOI [10.5281/zenodo.24541379](https://doi.org/10.5281/zenodo.24541379). The next release, v0.1.1, records the successful build and revised verification status; its own Zenodo DOI is not yet recorded here. See [CITATION.cff](CITATION.cff) for citation metadata. Use the specific version DOI listed on Zenodo when citing a fixed release. A DOI is an archival identifier, not evidence of peer review or mathematical correctness.
 
 ## License
 

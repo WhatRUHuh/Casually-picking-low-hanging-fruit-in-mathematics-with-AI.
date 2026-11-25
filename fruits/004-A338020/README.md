@@ -1,6 +1,6 @@
 # Fruit 004 — Triangle inequalities for floor differences
 
-**Status:** candidate proof; exact finite checks passed; Lean draft not compiled; novelty and independent review pending.
+**Status:** generalized inequality proved in Lean; exact finite checks passed; original OEIS bridge and degenerate-triangle claim not formalized; novelty and independent review pending.
 
 **Displayed thinking time:** 25 seconds, as reported by the human initiator for the initial ChatGPT research turn (not total verification time).
 
@@ -50,6 +50,6 @@ They therefore form the sides of a degenerate triangle. Both claims in the OEIS 
 
 [check.py](check.py) uses Machin's identity pi=16 arctan(1/5)-4 arctan(1/239) and alternating-series rational bounds. The lower and upper rational bounds give identical floors for each index 0 through 100. The script verifies all 171,700 nondecreasing triples of positive indices up to 100, along with monotonicity and the consecutive-triple claims. The script was executed successfully during repository preparation. The finite checks are not a substitute for the proof.
 
-[Lean draft](../../lean/Fruit004.lean) attempts to formalize the generalized floor-difference inequality. It has not been compiled; the geometric interpretation and degenerate-triangle claim have not yet been formalized.
+[Lean proof](../../lean/Fruit004.lean) proves the generalized floor-difference inequality as `Fruit004.triangle_iff`, with the supporting lemma `Fruit004.error_bound`. Both compiled successfully in [CI run #8](https://github.com/WhatRUHuh/Casually-picking-low-hanging-fruit-in-mathematics-with-AI./actions/runs/45683916081); the geometric interpretation and degenerate-triangle claim have not yet been formalized.
 
 AI-generated argument: GPT-6.2 (ChatGPT), November 26, 2026. Human initiator and maintainer: WhatRUHuh. No first-proof claim is made.

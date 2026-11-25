@@ -30,4 +30,4 @@ Substitute the identity sum of r² for r=1,...,m-1 = (m-1)m(2m-1)/6. Inserting t
 
 ## Reproduction
 
-[check.py](check.py) enumerates circles independently using exact rational centers and squared radii, and compares against the formula. [Fruit002.lean](../../lean/Fruit002.lean) contains initial geometry and arithmetic lemmas, not a full formalization of circle enumeration.
+[check.py](check.py) enumerates circles independently using exact rational centers and squared radii, and compares against the formula. [Fruit002.lean](../../lean/Fruit002.lean) contains geometry and arithmetic lemmas that compiled successfully in [CI run #8](https://github.com/WhatRUHuh/Casually-picking-low-hanging-fruit-in-mathematics-with-AI./actions/runs/45683916081), not a full formalization of circle enumeration.

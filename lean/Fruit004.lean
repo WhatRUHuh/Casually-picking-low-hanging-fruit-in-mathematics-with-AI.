@@ -6,7 +6,7 @@ namespace Fruit004
 noncomputable def b (a : ℝ) (n : ℤ) : ℤ :=
   ⌊a * (n : ℝ)^2⌋ - ⌊a * ((n : ℝ)-1)^2⌋
 
-/-- Error bound for a floor difference. Draft, not yet compiled. -/
+/-- Error bound for a floor difference. Compiled successfully in CI run #8. -/
 theorem error_bound (a : ℝ) (n : ℤ) :
     -1 < (b a n : ℝ) - a * (2*(n : ℝ)-1) ∧
     (b a n : ℝ) - a * (2*(n : ℝ)-1) < 1 := by
@@ -24,7 +24,7 @@ theorem error_bound (a : ℝ) (n : ℤ) :
   rw [hb, ← hxy]
   constructor <;> linarith
 
-/-- Generalized strict triangle inequality. Draft, not yet compiled. -/
+/-- Generalized strict triangle inequality. Compiled successfully in CI run #8. -/
 theorem triangle_iff (a : ℝ) (ha : 3 < a) (i j k : ℤ) :
     b a k < b a i + b a j ↔ k < i+j := by
   obtain ⟨hi₁,hi₂⟩ := error_bound a i

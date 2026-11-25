@@ -1,0 +1,20 @@
+name: Verification milestone release
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/verification-milestone-release.yml'
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish v0.1.1 if absent
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v0.1.1 --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            exit 0
+          fi
+          gh release create v0.1.1 --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title "🍎 First Harvest — Lean Verification Milestone" --notes "Five candidate research notes are retained. Python checks and the Lean build passed in Research checks #8 (commit 7db3df0): Fruit001, Fruit002, Fruit004 and MathFruit compiled successfully. Fruit004.triangle_iff formally proves the generalized floor-difference inequality. Fruits 001 and 002 have compiled supporting lemmas only; Fruits 003 and 005 remain unformalized. The original OEIS geometric interpretation and degenerate-triangle claim for Fruit 004 are not yet formalized. No independent review or priority confirmation is claimed. This patch updates CI configuration and verification documentation; the v0.1.0 archive is preserved. Verification log: https://github.com/WhatRUHuh/Casually-picking-low-hanging-fruit-in-mathematics-with-AI./actions/runs/45683916081"

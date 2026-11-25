@@ -9,9 +9,9 @@ repository-code: "https://github.com/WhatRUHuh/Casually-picking-low-hanging-frui
 identifiers:
   - type: doi
     value: "10.5281/zenodo.24541379"
-    description: "DOI displayed by the Zenodo repository integration."
+    description: "DOI displayed by the Zenodo integration for the initial archive; use the appropriate version DOI for subsequent releases."
 license: MIT
-abstract: "An open collection of AI-generated candidate mathematical proofs, reproducible checks, formalization drafts, and research provenance. Human initiator and maintainer: WhatRUHuh. Initial proof generation and drafting: GPT-6.2 (ChatGPT). Independent review, full formal verification, and priority confirmation are pending."
+abstract: "An open collection of AI-generated candidate mathematical proofs, reproducible checks, compiled formalization of the generalized floor-difference inequality, supporting Lean lemmas, and research provenance. Human initiator and maintainer: WhatRUHuh. Initial proof generation and drafting: GPT-6.2 (ChatGPT). Independent review, full formal verification, and priority confirmation are pending."
 keywords:
   - mathematics
   - AI-assisted research

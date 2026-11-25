@@ -48,4 +48,4 @@ The degree-4 coefficient is preserved in the quotient when p>4. This yields the 
 
 ## Reproduction
 
-Run [check.py](check.py) for exact integer coefficient tests. A Lean target and preliminary algebraic lemmas are in [Fruit001.lean](../../lean/Fruit001.lean). The Lean source is uncompiled and does not yet prove the general result.
+Run [check.py](check.py) for exact integer coefficient tests. A Lean target and preliminary algebraic lemmas are in [Fruit001.lean](../../lean/Fruit001.lean). The Lean source compiled successfully in [CI run #8](https://github.com/WhatRUHuh/Casually-picking-low-hanging-fruit-in-mathematics-with-AI./actions/runs/45683916081). The quadratic second-difference lemma is proved, but the general congruence is still a target proposition, not a Lean theorem.
